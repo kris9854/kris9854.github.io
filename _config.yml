@@ -21,7 +21,7 @@ timezone: Europe/Copenhagen
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: A documentation webpage                          # the main title
+title: webpage                          # the main title
 
 tagline: Created for personal use.   # it will display as the sub-title
 
@@ -44,7 +44,7 @@ social:
   email: kris9854@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    #- https://twitter.com/username      # change to your twitter homepage
+    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/kris9854       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -83,7 +83,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: 'content_data/img/Avatar.png'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
