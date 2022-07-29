@@ -14,6 +14,7 @@ It will also contain some setup intructions.
 ### Opensource
 
 #### SNMP monitoring software
+
 - [Zabbix :: The Enterprise-Class Open Source Network Monitoring Solution](https://www.zabbix.com/)
 - [Network Management - Castle Rock Computing - SNMPc](https://www.castlerock.com/)
 - [Free SNMP Monitoring Software with SNMP v3 Support](https://community.spiceworks.com/blogs/products/3239-network-monitor-end-of-life-connectivity-dashboard-suggested-replacement)
@@ -21,56 +22,86 @@ It will also contain some setup intructions.
 - [Pandora FMS: Opensource monitoring software](https://pandorafms.com/en/)
 
 #### Cluster (DFS)
+
 - [Gluster | Storage for your Cloud](https://www.gluster.org/)
 
 #### Firewall
+
 - [pfSense® - World's Most Trusted Open Source Firewall](https://www.pfsense.org/)
 - [OPNsense® a true open source security platform and more - OPNsense® is a true open source firewall and more](https://opnsense.org/)
 - [Untangle: Network Security for SMB](https://www.untangle.com/)
 
 #### Intrusion Detection
+
 - [RITA](https://github.com/activecm/rita)
 - [SNORT](https://www.snort.org/)
 
 #### IT Asset Management
+
 - [FOG Project (WIn, linux support)](https://fogproject.org/)
 - [Snipe-IT Free open source IT asset management](https://snipeitapp.com/)
 - [Netbox](https://netbox.readthedocs.io/en/stable/)
 
 #### LDAP server
+
 - [OpenLDAP](https://www.openldap.org/)
 - [phpLDAPadmin](http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page)
 
 
 #### Hypervisor
+
 - [XCP-ng](https://xcp-ng.org/)
 - [ESXI Server - Maximum 1 CPU and 32 gb ram](https://www.vmware.com/products/esxi-and-esx.html)
 - [ARM ESXI](https://flings.vmware.com/esxi-arm-edition)
 
 ##### Cluster management
+
 - [Kubernetes k8 and k3](https://kubernetes.io/)
 - [OKD - upstream openshift](https://www.okd.io/)
 
 
 #### Database
+
 - [CoachroachDB](https://www.cockroachlabs.com/)
 - [MariaDB](https://mariadb.org/)
 
 #### Misc
+
 - [Free ipv6 - tunnelbroker](https://www.tunnelbroker.net/)
 - [Syslog - Elastic](https://www.elastic.co/)
 
 ##### Automation
+
 - [Web app automation - Puppeteer](https://pptr.dev/)
+##### Security
+
+##### Information Gathering
+
+- [Shodan](https://www.shodan.io/)
+- [Snopes](https://www.snopes.com/)
+- [Have I been Pwned](https://haveibeenpwned.com/)
 
 ### Grafical Links for picture edition
 
+## Learning material
+
+### Hacking
+
+- [Beginner - overthewire](https://overthewire.org/wargames/)
+- [Beginner - XSS web](https://xss-game.appspot.com/)
+- [Mix - tryhackme](https://tryhackme.com/)
+- [Mix - hackthebox](https://www.hackthebox.eu/)
+- [Eget lab - VulnHub](https://www.vulnhub.com/)
+- [Homemade CTF](https://github.com/CTFd/CTFd)
 
 
 ## Personal Project links
 
+
 ## Setup guides
 
+
 ### Automation
+
 
 #### Puppeteer - Web app automation
