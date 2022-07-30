@@ -18,7 +18,8 @@ Domain: lab.local
 
 **img 1** - Homelab setup
 <br/>
- 
+The servers will have different functions (look the writing on the drawing about). Thnis includes LDAP services, ansible, laravel and mariadb.  
+The Windows server serves one purpose, and thats as a ansible client.  
 
 
 
