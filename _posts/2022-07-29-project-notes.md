@@ -9,7 +9,16 @@ tags: [project, labbing, multiple]
 The following document contains different sections that will provide the reader with different knowledge of what the different projects can enhance.  
 It will also contain some setup intructions. 
 
-## Links to projects
+## Homelab - lab.local
+The following section is the homelab i use.  
+Domain: lab.local
+</br>
+
+<img src="assets/img/lab/lab.local_drawing.png" alt="Drawing of my homelab" style="height: 100px; width:100px;"/>
+
+**img 1** - Homelab setup
+</br>
+ 
 
 
 
