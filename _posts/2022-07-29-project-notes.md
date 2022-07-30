@@ -14,7 +14,7 @@ The following section is the homelab i use.
 Domain: lab.local
 <br/>
 
-<img src="https://kris9854.github.io/assets/img/lab/HomeLab-Homelab-001.jpg" alt="Drawing of my homelab" style="height: 100px; width:100px;"/>
+<img src="https://kris9854.github.io/assets/img/lab/HomeLab-Homelab-001.jpg" alt="Drawing of my homelab"/>
 
 **img 1** - Homelab setup
 <br/>
