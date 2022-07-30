@@ -12,12 +12,12 @@ It will also contain some setup intructions.
 ## Homelab - lab.local
 The following section is the homelab i use.  
 Domain: lab.local
-</br>
+<br/>
 
-<img src="assets/img/lab/lab.local_drawing.png" alt="Drawing of my homelab" style="height: 100px; width:100px;"/>
+<img src="../assets/img/lab/lab.local_drawing.jpg" alt="Drawing of my homelab" style="height: 100px; width:100px;"/>
 
 **img 1** - Homelab setup
-</br>
+<br/>
  
 
 
