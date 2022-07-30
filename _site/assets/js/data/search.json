@@ -1,0 +1,34 @@
+[
+  
+  {
+    "title": "WSL2 Jekyll installation Help",
+    "url": "/posts/wsl/",
+    "categories": "Guide, Development",
+    "tags": "dev, wsl, guide",
+    "date": "2022-06-29 00:00:00 +0200",
+    
+
+
+
+
+
+    "snippet": "Config helpsudo apt-get update -y &amp;&amp; sudo apt-get upgrade -ysudo apt install ruby-fullsudo apt-get install make gcc gpp build-essential zlib1g zlib1g-dev ruby-dev dh-autoreconfsudo gem updatesudo gem install bundler# if you get errors (as I've done), go back to the start and go through these commands again#sudo gem install jekyll# inside jekyll repobundle install# simple servebundle exec jekyll serve"
+  },
+  
+  {
+    "title": "Customize the Favicon",
+    "url": "/posts/wslcustomize-the-favicon/",
+    "categories": "Blogging, Tutorial",
+    "tags": "favicon",
+    "date": "2019-08-11 00:34:00 +0200",
+    
+
+
+
+
+
+    "snippet": "The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.Generate the faviconPrepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image to upload your image file.In the next step, the webpage will show all usage scenarios. You can keep the default options, scroll to the bottom of the page, and click the button Generate your Favicons and HTML code to generate the favicon.Download &amp; ReplaceDownload the generated package, unzip and delete the following two from the extracted files:  browserconfig.xml  site.webmanifestAnd then copy the remaining image files (.PNG and .ICO) to cover the original files in the directory assets/img/favicons/ of your Jekyll site. If your Jekyll site doesn’t have this directory yet, just create one.The following table will help you understand the changes to the favicon files:            File(s)      From Online Tool      From Chirpy                  *.PNG      ✓      ✗              *.ICO      ✓      ✗        ✓ means keep, ✗ means delete.The next time you build the site, the favicon will be replaced with a customized edition."
+  }
+  
+]
+
