@@ -12,17 +12,17 @@ The upstream project is given without any support, and are not suitable for prod
 
 ## Redhat: OpenShift
 - Redhat Openshift upstram Project
-- (OKD)[https://www.okd.io/]
+- [OKD](https://www.okd.io/)
 
 ## Redhat: Ansible Automation Platform
 - Redhat AAP Upstream project
-- (AWX)[https://github.com/ansible/awx]
+- [AWX](https://github.com/ansible/awx)
 
 ## Redhat: Identity Management (IDM)
 - Redhat Identity Manager's (IDM) upstream project
-- (FreeIPA)[https://www.freeipa.org/page/Main_Page]
+- [FreeIPA](https://www.freeipa.org/page/Main_Page)
 - Though having a redhat licens gives you the correct licens to use IDM
 
 ## Redhat: Virtualization
 - Redhat virtualization upstream project
-- (oVirt)[https://www.ovirt.org/]
+- [oVirt](https://www.ovirt.org/)
