@@ -9,16 +9,16 @@ tags: [it, software, html, markdown]
 
 ## Common
 - create headers using `# title`
+
 <details>
 <summary>Example</summary>
 
-  - `# h1`
-  - `## h2`
-  - `### h3`
-  - `#### h4`
-  - `##### h5`
-  - `###### h6`
-
+  - `# h1`  
+  - `## h2`  
+  - `### h3`  
+  - `#### h4`  
+  - `##### h5`  
+  - `###### h6`  
 </details>
 
 - Emphasis ex bold, italic text
@@ -80,6 +80,7 @@ This is [an example](http://example.com/ "Title") inline link.
 
 <details>
 <summary>Show The characters:</summary>
+
   - \   backslash
   - `   backtick
   - - asterisk
@@ -92,6 +93,7 @@ This is [an example](http://example.com/ "Title") inline link.
   - - minus sign (hyphen)
   - .   dot
   - !   exclamation mark
+
 </details>
 
 ## Advanced
@@ -102,22 +104,23 @@ Awesome small tricks for the advance usage of markdown
 <details>
 <summary>Example</summary>
 
-<details>
-<summary>Details</summary>
+  <details>
+  <summary>Details</summary>
 
-**TEXT INSIDE DETAILS**
+  **TEXT INSIDE DETAILS**
 
-- This is just some text inside the details part
+  - This is just some text inside the details part
 
-</details>
+  </details>
 
-**Code:**
-```html
-<details>
-<summary>Details</summary>
+  **Code:**
+  ```html
+  
+  <details>
+  <summary>Details</summary>
 
-**TEXT INSIDE DETAILS**
-- This is just some text inside the details part
-</details>
-```
+  **TEXT INSIDE DETAILS**
+  - This is just some text inside the details part
+  </details>
+  ```
 </details>
