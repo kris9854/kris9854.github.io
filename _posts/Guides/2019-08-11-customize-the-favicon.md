@@ -1,36 +1,38 @@
 ---
 title: Customize the Favicon
 author: cotes
-date: 2019-08-11 00:34:00 +0200
+date: 2022-09-27 17:45:00 +0200
 categories: [Blogging, Tutorial]
 tags: [favicon]
 ---
 
-The [favicons](https://www.favicon-generator.org/about/) of [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/) are placed in the directory `assets/img/favicons/`{: .filepath}. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
+# Development Setup
+In this guide I will provice information on how I setup my development environment. I was using WSL 2 for long, but as my demand for communicating between multiple Virtual machines. 
+My lab consists of the following machines:
+| Machine name | OS | Purpose |
+|--------------|----|---------|
+| ansible01.lab.local | Alma Linux 9 | Ansible control node / git / git signing profiles |
+| wintest.lab.local | windows 2019 | Ansible Test node |
+| almatest01.lab.local | Alma Linux 9 | Ansible Test node |
+| ubutest01.lab.local | ubuntu | Ansible Test node |
+<br/>
+The Ansible01 machines has been setup so that I can connect through VS: Code towards that. I have setup ssh and gpg keys so that I can sign my commits towards Github.
 
-## Generate the favicon
+My ~/.gitcommit file has the following setup:
 
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool [**Real Favicon Generator**](https://realfavicongenerator.net/) and click the button <kbd>Select your Favicon image</kbd> to upload your image file.
+```bash
+[user]
+    email = redacted
+    name = redacted
+    signingkey = redacted
 
-In the next step, the webpage will show all usage scenarios. You can keep the default options, scroll to the bottom of the page, and click the button <kbd>Generate your Favicons and HTML code</kbd> to generate the favicon.
+[commit]
+        gpgsign = true
 
-## Download & Replace
+[trailer "sign"]
+    key = "Signed-off-by:"
+    ifmissing = add
+    ifexist =doNothing
+    command = echo "$(git config user.name) <$(git config user.email>"
 
-Download the generated package, unzip and delete the following two from the extracted files:
-
-- `browserconfig.xml`{: .filepath}
-- `site.webmanifest`{: .filepath}
-
-And then copy the remaining image files (`.PNG`{: .filepath} and `.ICO`{: .filepath}) to cover the original files in the directory `assets/img/favicons/`{: .filepath} of your Jekyll site. If your Jekyll site doesn't have this directory yet, just create one.
-
-The following table will help you understand the changes to the favicon files:
-
-| File(s)             | From Online Tool                  | From Chirpy |
-|---------------------|:---------------------------------:|:-----------:|
-| `*.PNG`             | ✓                                 | ✗           |
-| `*.ICO`             | ✓                                 | ✗           |
-
->  ✓ means keep, ✗ means delete.
-{: .prompt-info }
-
-The next time you build the site, the favicon will be replaced with a customized edition.
+```
