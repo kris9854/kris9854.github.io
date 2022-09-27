@@ -27,7 +27,7 @@ My ~/.gitcommit file has the following setup:
     signingkey = redacted
 
 [commit]
-        gpgsign = true
+    gpgsign = true
 
 [trailer "sign"]
     key = "Signed-off-by:"
