@@ -5,122 +5,108 @@ date: 2022-09-23 21:16:00 +0200
 categories: [Guide, Information]
 tags: [it, software, html, markdown]
 ---
-# Markdown skills
 
-## Common
-- create headers using `# title`
+# Markdown
 
-<details>
-<summary>Example</summary>
+Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
 
-  - `# h1`  
-  - `## h2`  
-  - `### h3`  
-  - `#### h4`  
-  - `##### h5`  
-  - `###### h6`  
-</details>
+Documentation: [Markdown Docs](https://daringfireball.net/projects/markdown/)
+RFC: [RFC 7763](https://www.rfc-editor.org/rfc/rfc7763)
+GitHub Documentation: [Writing Markdown on GitHub](https://docs.github.com/en/get-started/writing-on-github)
 
-- Emphasis ex bold, italic text
+---
+## Cheat-Sheet
 
-<details>
-<summary>Example</summary>
-
-**Looks:**
-  - **This is bold text**
-  - **This is bold text**
-  - *This is italic text*
-  - *This is italic text*
-  - ~~Strikethrough~~
-
-**Code:**
+### Headings
 ```markdown
-    - **This is bold text**
-    - __This is bold text__
-    - *This is italic text*
-    - _This is italic text_
-    - ~~Strikethrough~~
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
 ```
-</details>
 
-- Blockquotes using `>` can be indented using multiple `>>`,`>>>`
-- Inline code using \`CODE\`
-- Multiline code using \```, able to set syntax highlightning by added name of language after the \```CODE ex \```yaml
-- Images
+Here is a heading: `# Heading`, **don't do this:** `#Heading` 
 
-<details>
-<summary>Example</summary>
+### Emphasis
+```markdown
+Emphasis, aka italics, with *asterisks* or _underscores_.
 
-<img src="https://octodex.github.com/images/minion.png" alt="Minion" width="200"/>
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
+Combined emphasis with **asterisks and _underscores_**.
 
-**Code:**
-```html
-<img src="https://octodex.github.com/images/minion.png" alt="Minion" width="200"/>
+Strikethrough uses two tildes. ~~Scratch this.~~
 ```
-</details>
 
-- Links
-
-<details>
-<summary>Example:</summary>
-
-**Example:**
-  - This is [an example](http://example.com/ "Title") inline link.
-  - [This link](http://example.net/) has no title attribute.
-
-**Code:**
-```md
-This is [an example](http://example.com/ "Title") inline link.
-[This link](http://example.net/) has no title attribute.
+### Line Breaks
+```markdown
+First line with two spaces after.  
+And the next line.
 ```
-</details>
 
-- Markdown provides backslash escapes for the following characters:
+### Lists
 
-<details>
-<summary>Show The characters:</summary>
+#### Ordered Lists
+```markdown
+1. First item
+2. Second item
+3. Third item
+```
 
-  - \   backslash
-  - `   backtick
-  - - asterisk
-  - _   underscore
-  - {}  curly braces
-  - []  square brackets
-  - ()  parentheses
-  - \# hash mark
-  - + plus sign
-  - - minus sign (hyphen)
-  - .   dot
-  - !   exclamation mark
+#### Unordered Lists
+```markdown
+- First item
+- Second item
+- Third item
+```
 
-</details>
+### Links
+```markdown
+Link with text: [link-text](https://www.google.com)
+```
 
-## Advanced
-Awesome small tricks for the advance usage of markdown
+### Images
+```markdown
+Image with alt text: ![alt-text](https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067)
 
-- Create a bigger font size without creating a header: `<font size="18">**Awesome Document:**</font>`
-- Create a collapsable with a "title":
-<details>
-<summary>Example</summary>
+Image without alt text: ![](https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067)
+```
 
-  <details>
-  <summary>Details</summary>
+### Code Blocks
 
-  **TEXT INSIDE DETAILS**
+#### Inline Code Block
+```markdown
+Inline `code` has `back-ticks around` it.
+```
 
-  - This is just some text inside the details part
+#### Blocks of Code
+<pre>
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
+</pre>
 
-  </details>
+### Tables
 
-  **Code:**
-  ```html
-  
-  <details>
-  <summary>Details</summary>
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily.
 
-  **TEXT INSIDE DETAILS**
-  - This is just some text inside the details part
-  </details>
-  ```
-</details>
+```markdown
+| Heading 1 | Heading 2 | Heading 3 |
+|---|---|---|
+| col1 | col2 | col3 |
+| col1 | col2 | col3 |
+```
