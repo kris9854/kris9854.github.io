@@ -48,3 +48,38 @@ My ~/.gitconfig file has the following setup:
         ifexist =doNothing
         command= echo "$(git config user.name) <$(git config user.email>"
 ```
+- In your `.bash_profile`
+```bash
+eval NEW_USER=dev-ansible
+
+#CONFIGS FILES
+cat <<EOT >> ~/.gnupg/gpg.conf
+default-key [GPG-KEY-ID]
+use-agent
+EOT
+
+cat <<EOT >> ~/.gnupg/gpg-agent.conf 
+use-standard-socket
+default-cache-ttl 600
+write-env-file /Users/$NEW_USER/.gnupg/gpg-agent-info
+pinentry-program /usr/bin/pinentry
+EOT
+
+cat <<EOT >> ~/.bash_profile
+# SSH AGENT
+eval $(ssh-agent)
+# ANSIBLE SETTINGS:
+eval DEFAULT_ROLES_PATH=~/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:~/github ansible_roles:./roles:~/github/roles
+export GPG_TTY=$(tty)
+[ -f ~/.gnupg/gpg-agent-info ] && source ~/.gnupg/gpg-agent-info
+
+if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
+        export GPG_AGENT_INFO
+else
+      eval $( gpg-agent --daemon --options ~/.gnupg/gpg-agent.conf --write-env-file ~/.gnupg/gpg-agent-info )
+fi
+EOT
+#REFRESH
+killall gpg-agent
+. ~/.bash_profile
+```
