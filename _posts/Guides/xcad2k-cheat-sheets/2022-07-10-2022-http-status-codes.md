@@ -1,3 +1,11 @@
+---
+title: HTTP status codes
+author: Christian
+date: 2022-09-10 19:00:00 +0200
+categories: [Cheat sheet, Developer]
+tags: [www, help]
+---
+
 # HTTP Status Codes
 ## Categories
 -   **1XX** status codes: Informational Requests

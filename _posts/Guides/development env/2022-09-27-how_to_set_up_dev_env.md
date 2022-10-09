@@ -49,6 +49,7 @@ My ~/.gitconfig file has the following setup:
         command= echo "$(git config user.name) <$(git config user.email>"
 ```
 - In your `.bash_profile`
+
 ```bash
 eval NEW_USER=dev-ansible
 
@@ -82,4 +83,5 @@ EOT
 #REFRESH
 killall gpg-agent
 . ~/.bash_profile
+
 ```
