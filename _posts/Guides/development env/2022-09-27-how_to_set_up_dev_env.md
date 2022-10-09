@@ -75,7 +75,7 @@ My ~/.gitconfig file has the following setup:
 - In your `.bash_profile`
 
 ```bash
-eval NEW_USER=dev-ansible
+eval NEW_USER=kit-ansible
 
 #CONFIGS FILES
 cat <<EOT >> ~/.gnupg/gpg.conf
@@ -94,7 +94,7 @@ cat <<EOT >> ~/.bash_profile
 # SSH AGENT
 eval $(ssh-agent)
 # ANSIBLE SETTINGS:
-eval DEFAULT_ROLES_PATH=~/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:~/github ansible_roles:./roles:~/github/roles
+eval DEFAULT_ROLES_PATH=~/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:~/github/ansible_roles
 export GPG_TTY=$(tty)
 [ -f ~/.gnupg/gpg-agent-info ] && source ~/.gnupg/gpg-agent-info
 
