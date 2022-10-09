@@ -8,13 +8,37 @@ tags: [Git, help]
 # Development Setup
 In this guide I will provice information on how I setup my development environment. I was using WSL 2 for long, but as my demand for communicating between multiple Virtual machines. 
 My lab consists of the following machines:
+
 | Machine name | OS | Purpose |
 |--------------|----|---------|
-| ansible01.lab.local | Alma Linux 9 | Ansible control node / git / git signing profiles |
-| wintest.lab.local | windows 2019 | Ansible Test node |
+| Code: alma09.lab.local | Alma Linux 9 | Ansible control node / git / git signing profiles |
+| Code: win2019.lab.local | windows Server 2019 | PowerShell / git / git signing profiles |
 | almatest01.lab.local | Alma Linux 9 | Ansible Test node |
-| ubutest01.lab.local | ubuntu | Ansible Test node |
+| windc01.lab.local | Windows Server 2019 | Ansible Test node and LAB DC |
+
 <br/>
+
+## Setup
+- Install linux vm on hyper-v (or other)
+        - At installation choose container tools and set hostname to alma09.lab.local (example)
+
+        ```bash
+        eval NEW_USER_NAME=dev-ansible
+        sudo yum upgrade -y && sudo yum update -y
+        echo /etc/sudoers.d/$NEW_USER_NAME >> $NEW_USER_NAME ALL=(ALL) NOPASSWD:ALL
+        sudo useradd $NEW_USER_NAME
+        passwd $NEW_USER_NAME
+        ```
+
+        - Then Setup the env for the new user
+
+        ```bash
+        eval NEW_USER_NAME=dev-ansible
+        mkdir --parents ~/github ~/github/ansible_repos  ~/github/ansible_roles  ~/github/repo ~/.ssh
+        touch ~/.ssh/authorized_keys
+        ```
+
+
 
 To generate a GPG key you can do the following:
 ```shell
